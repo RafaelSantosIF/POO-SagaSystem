@@ -3,12 +3,14 @@ package Sistema;
 class Personagem {
 	
 	private String nome;
-	private int vida;
-	private int ataque;
-	private int defesa;
-	private int poder;
+	private int hp;
+	private int atk;
+	private int def;
+	private int power;
 	private String classe;
 	private Arma arma;
+	private Poder poder;
+	
 	public void setName (String name) {
 		this.nome = name;
 	}
@@ -16,27 +18,39 @@ class Personagem {
 		return this.nome;
 	}
 	public void setStats (int life, int atk, int def, int power) {
-		this.vida = life;
-		this.ataque = atk;
-		this.defesa = def;
-		this.poder = power;
+		this.hp = life;
+		this.atk = atk;
+		this.def = def;
+		this.power = power;
 	}
 	public int getLife () {
-		return this.vida;
+		return this.hp;
 	}
 	public int getAtk () {
-		return this.ataque;
+		return this.atk;
 	}
 	public int getDef () {
-		return this.defesa;
+		return this.def;
 	}
 	public int getPower () {
-		return this.poder;
+		return this.power;
 	}
-	public void setClasse (String classe) {
-		this.classe = classe;
+	public void setClasse (Classe classe) {
+		this.classe = classe.getName();
 	}
 	public String getClasse () {
 		return this.classe;
+	}
+	public void setArma (Classe classe) {
+		this.arma = classe.getArma();
+	}
+	public Arma getArma () {
+		return this.arma;
+	}
+	public Poder getPoder() {
+		return poder;
+	}
+	public void setPoder(Classe classe) {
+		this.poder = classe.getPoder();
 	}
 }
