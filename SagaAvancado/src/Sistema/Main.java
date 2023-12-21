@@ -6,20 +6,20 @@ public class Main {
 	static Arma katana = new Arma ("Katana", 8, 2);
 	static Arma naginata = new Arma ("Naginata", 12, 1);
 	static Arma wakizashi = new Arma ("Wakizashi", 4, 3);
-    static Arma shuriken = new Arma ("Shuriken", 2, 4);
-    static Arma kunai = new Arma ("Kunai", 1, 10);
-    static Arma kuzarigama = new Arma ("Kuzarigama", 6, 2);
-    static Arma kanabo = new Arma ("Kanabo", 15, 3);
-    static Arma pedra = new Arma ("Pedra", 10, 1);
+	static Arma shuriken = new Arma ("Shuriken", 2, 4);
+	static Arma kunai = new Arma ("Kunai", 1, 10);
+	static Arma kuzarigama = new Arma ("Kuzarigama", 6, 2);
+	static Arma kanabo = new Arma ("Kanabo", 15, 3);
+	static Arma pedra = new Arma ("Pedra", 10, 1);
 	
 	static Poder corteSombrio = new Poder ("Corte Sombrio", 16, 2, 10);
-    static Poder golpeFurioso = new Poder ("Golpe Furioso", 25, 1, 6);
-    static Poder nuvemVeneno = new Poder ("Nuvem de Veneno", 6, 4, 3);
-    static Poder ninjutsu = new Poder ("Ninjutsu", 50, 2, 20);
-    static Poder bolaFogo = new Poder ("Bola de Fogo", 80, 4, 30);
-    static Poder congelar = new Poder ("Congelar", 40, 6, 20);
-    static Poder raio = new Poder ("Raio", 100, 5, 50);
-    static Poder detruicao = new Poder ("Destrui��o", 50, 1, 10);
+    	static Poder golpeFurioso = new Poder ("Golpe Furioso", 25, 1, 6);
+    	static Poder nuvemVeneno = new Poder ("Nuvem de Veneno", 6, 4, 3);
+    	static Poder ninjutsu = new Poder ("Ninjutsu", 50, 2, 20);
+    	static Poder bolaFogo = new Poder ("Bola de Fogo", 80, 4, 30);
+    	static Poder congelar = new Poder ("Congelar", 40, 6, 20);
+    	static Poder raio = new Poder ("Raio", 100, 5, 50);
+    	static Poder detruicao = new Poder ("Destrui��o", 50, 1, 10);
 	
 	public static int [] distribuirAtributos () {
             do{
@@ -196,8 +196,8 @@ public class Main {
                 return char1;
 	}
 
-    public static Personagem criarChar2 () {
-	    String nome;
+    	public static Personagem criarChar2 () {
+	    	String nome;
 		System.out.print("\nNome: ");
 		nome = input.next();
 		int atributos [] = distribuirAtributos();
@@ -215,13 +215,13 @@ public class Main {
 	
 	public static void main(String[] args) {
 		System.out.println("<===== WELCOME TO SHADOW FIGHT =====>\n");
-        System.out.println("\t\t press enter to continue \t\t\n");
-        input.nextLine();
-        System.out.println("<===== PLAYER ONE =====>\n");
-        Personagem char1 = criarChar1 ();
-        System.out.println("<===== PLAYER TWO =====>\n");
-        Personagem char2 = criarChar2 ();
-        System.out.println();
+        	System.out.println("\t\t press enter to continue \t\t\n");
+        	input.nextLine();
+        	System.out.println("<===== PLAYER ONE =====>\n");
+        	Personagem char1 = criarChar1 ();
+        	System.out.println("<===== PLAYER TWO =====>\n");
+        	Personagem char2 = criarChar2 ();
+        	System.out.println();
 	}
 
 }
