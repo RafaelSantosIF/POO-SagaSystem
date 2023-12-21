@@ -23,6 +23,9 @@ class Personagem {
 		this.def = def;
 		this.power = power;
 	}
+        public void setLife (int hp){
+            this.hp = hp;
+        }
 	public int getLife () {
 		return this.hp;
 	}
@@ -32,6 +35,9 @@ class Personagem {
 	public int getDef () {
 		return this.def;
 	}
+        public void setPower (int pow){
+            this.power = pow;
+        }
 	public int getPower () {
 		return this.power;
 	}
